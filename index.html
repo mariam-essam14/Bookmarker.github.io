@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="bg-white ">
+        <div class="container border-bottom border-secondary ">
+            <h3 class="text-secondary fw-bold  ">Bookmarker</h3>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="part  p-5  text-center  lh-lg m-auto">
+            <h4 class="fw-bold mb-2">Bookmark your favorite sites</h4>
+            <label class="fw-bold mb-2 mt-3 " for="siteName">Site Name</label>
+            <input type="text" class="form-control w-75 m-auto " placeholder="Bookmark Name " id="siteName" required>
+            <p class="alert m-auto failed  w-75 fw-bold mt-2" id="notrequired"> Name is required </p>
+            <p class="alert m-auto failed  w-75 fw-bold mt-2" id="notrequired2"> this url already exist </p>
+            <label class="fw-bold mb-2 mt-3 " for="siteUrl">Site URL</label>
+            <input type="text" class="form-control w-75 m-auto  " placeholder="Website URL" id="siteUrl"  >  
+            <p class="alert m-auto failed  w-75 fw-bold mt-2"id="notrequired1"> Url Field is required </p>
+            <button class="btn  mt-3 text-white" onclick=" submit() ,display()" >submit</button>
+        
+
+        </div>
+    </div>
+
+    <div class="container border-bottom  border-secondary mt-4" id="users">
+    
+
+
+    </div>
+
+
+
+    <footer class="  m-auto">
+        <p class="text-secondary text-opacity-75 fw-bold  p-3">© 2019 Bookmarker Inc.</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
